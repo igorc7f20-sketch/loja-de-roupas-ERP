@@ -1,0 +1,36 @@
+services:
+  web:
+    # Use the Dockerfile in the current directory to build the image
+    build: .
+  
+    # Command to run the Django development server
+    command: python manage.py runserver 0.0.0.0:8000
+  
+    # Mount the current directory to /app in the container
+    volumes:
+      - .:/app
+
+    env_file:
+      - .env
+
+    # Specify that the web service depends on the db service
+    depends_on:
+      - db
+  
+    # Map port 8000 of the container to port 8000 on the host
+    ports:
+      - "8000:8000"
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: loja_db
+      POSTGRES_USER: IgorADM
+      POSTGRES_PASSWORD: Igo-9090
+    ports:
+      - "5432:5432"
+    volumes:
+      - dados_postgres:/var/lib/postgresql/data 
+
+volumes:
+  dados_postgres:

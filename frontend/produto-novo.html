@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Cadastro de Produtos</title> 
+</head> 
+<body>
+<header> 
+	<h1>Rainha Modas</h1>
+	<nav> 
+		<ul> 
+			<li><a href="index.html">Página Inicial</a></li> 
+		</ul> 
+	</nav> 
+</header> 
+<main> 
+	<h2>Cadastro de Produtos</h2> 
+	<form method="POST">
+		<div> 
+			<label for="Nome">Nome do Produto</label> 
+			<input id="Nome" name="Nome" type="text" required> 
+		</div>
+		<div> 
+			<label for="codigo">Código do Produto</label> 
+			<input id="codigo" name="codigo" type="number" required> 
+		</div>
+		<div> 
+			<label for="categoria">Categoria</label> 
+			<input id="categoria" name="categoria" type="text" required> 
+		</div>
+		<div> 
+			<label for="preco">Preço de Custo</label> 
+			<input id="preco" name="preco" type="number" step="0.01" required> 
+		</div>
+		<div> 
+			<label for="venda">Preço de Venda</label> 
+			<input id="venda" name="venda" type="number" step="0.01" required> 
+		</div>
+		<div> 
+			<label for="status">Status</label> 
+			<select id="status" name="status"> 
+				<option value="Ativo">Ativo</option> 
+				<option value="Inativo">Inativo</option> 
+			</select>  
+		</div> 
+		<button type="submit">Salvar Produto</button> 
+	</form> 
+</main> 
+</body> 
+</html

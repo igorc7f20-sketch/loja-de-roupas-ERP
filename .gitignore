@@ -1,0 +1,19 @@
+# Arquivos do sistema e IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente Virtual
+venv/
+env/
+
+# Variáveis de Ambiente (SEGURANÇA!)
+.env
+
+# Banco de dados local (geralmente não sobe)
+db.sqlite3

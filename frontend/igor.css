@@ -1,0 +1,31 @@
+body {
+    background-color: var(--background-light) !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+        /* Faz o rodapé ficar sempre embaixo */
+.container.mt-4 {
+    flex-grow: 1;
+}
+
+.btn-paginaInicial {
+    background-color:blue;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-paginaInicial:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.btn-paginaInicial:active {
+    transform: translateY(0);
+}
