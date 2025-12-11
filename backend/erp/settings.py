@@ -1,5 +1,4 @@
 from pathlib import Path
-
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -63,8 +62,6 @@ WSGI_APPLICATION = "erp.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
-
-import os
 
 DATABASES = {
     "default": {
